@@ -10,7 +10,7 @@ menuconfig NFS_RUST
 
 if NFS_RUST
 
-config NFS_SAMPLE_RUST_MINIMAL
+config NFS_RUST_SAMPLE_MINIMAL
 	tristate "Minimal"
 	help
 	  This option builds the Rust minimal module sample.
@@ -20,7 +20,7 @@ config NFS_SAMPLE_RUST_MINIMAL
 
 	  If unsure, say N.
 
-config NFS_SAMPLE_RUST_PRINT
+config NFS_RUST_SAMPLE_PRINT
 	tristate "Printing macros"
 	help
 	  This option builds the Rust printing macros sample.
@@ -30,7 +30,7 @@ config NFS_SAMPLE_RUST_PRINT
 
 	  If unsure, say N.
 
-config NFS_SAMPLE_RUST_HOSTPROGS
+config NFS_RUST_SAMPLE_HOSTPROGS
 	bool "Host programs"
 	help
 	  This option builds the Rust host program samples.
