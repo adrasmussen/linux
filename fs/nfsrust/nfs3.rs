@@ -86,6 +86,42 @@ pub(crate) const FSF_DEFAULT: i32 = 0x001B;
 pub(crate) const FSF_BILLYBOY: i32 = 0x0018;
 pub(crate) const FSF_READONLY: i32 = 0x0008;
 
+
+pub(crate) enum Stat {
+    OK = 0,
+    PERM = 1,
+    NOENT = 2,
+    IO = 5,
+    NXIO = 6,
+    EAGAIN = 11,
+    ACCES = 13,
+    EXIST = 17,
+    XDEV = 18,
+    NODEV = 19,
+    NOTDIR = 20,
+    ISDIR = 21,
+    INVAL = 22,
+    FBIG = 27,
+    NOSPC = 28,
+    ROFS = 30,
+    MLINK = 31,
+    OPNOTSUPP = 45,
+    NAMETOOLONG = 63,
+    NOTEMPTY = 66,
+    DQUOT = 69,
+    STALE = 70,
+    REMOTE = 71,
+    WFLUSH = 99,
+    BADHANDLE = 10001,
+    NOT_SYNC = 10002,
+    BAD_COOKIE = 10003,
+    NOTSUPP = 10004,
+    TOOSMALL = 10005,
+    SERVERFAULT = 10006,
+    BADTYPE = 10007,
+    JUKEBOX = 10008,
+}
+
 pub(crate) enum FType {
     NON = 0,
     REG = 1,
