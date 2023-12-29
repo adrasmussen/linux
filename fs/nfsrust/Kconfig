@@ -30,7 +30,7 @@ config NFS_SAMPLE_RUST_PRINT
 
 	  If unsure, say N.
 
-config SAMPLE_RUST_HOSTPROGS
+config NFS_SAMPLE_RUST_HOSTPROGS
 	bool "Host programs"
 	help
 	  This option builds the Rust host program samples.
